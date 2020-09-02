@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="">
+      <h1>Online Examination Form</h1>
+    </div>
+
+    <div class="image1">
+      <img src="nature.jpg" alt="Nature Image">
+    </div>
+    <div>
+      <form class="form" action="index.html" method="post">
+        <h2>Personal Information:</h2>
+        <label for="First-Name">First Name:</label>                             <!--Label is used to label a field and its a inline tag-->
+        <input type="text" name="First-name" placeholder="YOUR NAME" required>  <!--input tag is used to get input from the console which can be linked to a javascript file-->
+        <br>
+        <br>
+        <label for="Last-name">Last Name:</label>
+        <input type="text" name="Last-name" placeholder="SURNAME" required>     <!--placeholder is used for text which can be seen but cant't be edited-->
+        <br>
+        <br>
+        <div class="Gender">                                                    <!--div is a block tag which creates its own block and starts on a new line from prvious element on Page -->
+          <label for="Gender">Gender:  </label>
+          <input type="radio"  name="Gender" value="" required>                  <!--radiotype input is like button used in MCQ's work like that for buttons with same name  -->
+          <label id="male"  for="Male">Male</label>
+          <input type="radio" name="Gender" value="" required>
+          <label id="female" for="Female">Female</label>
+          <input type="radio" name="Gender" value="" required>
+          <label id="other" for="Other">Other</label>
+        </div>
+        <br>
+        <div class="">
+          <label for="Email">Gmail:</label>
+          <input id="a" type="email" name="Email" placeholder="e.g.xyz@gmail.com">
+        </div>
+        <br>
+        <div class="container">
+          <div class="container-item" style="order:3;
+          flex:1 1 100px;
+          background-color: black;
+          ">A</div>
+          <div class="container-item" style="order:2;
+          flex:1 1 100px;
+          align-self: flex-start;
+          background-color: blue;
+          ">B</div>
+          <div class="container-item" style="order:5;
+          flex:1 1 100px;
+          align-self: flex-start;
+          background-color: skyblue;
+          ">C</div>
+          <div class="container-item" style="order:4;
+          flex:1 1 100px;
+          align-self: flex-start;
+          background-color: yellow;
+          ">D</div>
+          <div class="container-item" style="order:0;
+          flex:1 1 100px;
+          background-color: green;
+          ">E</div>
+          <div class="container-item" style="order:4;
+          flex:1 1 100px;
+          background-color: white;
+          ">F</div>
+        </div>
+          <div class="image">
+            <img class="on" src="one.jpg" style=" order: 2; align-self: center;">
+
+            <img class="on" src="two.jpg" alt="orry" style=" order: 3; align-self: flex-end;" >
+
+            <img class="on" src="three.jpg" style=" order: 1; align-self: flex-end;" >
+          </div>
+        <div class="">
+          <div class="grid-container">
+            <div class="grid-item" style="background:green;"> <img class="on" src="two.jpg" style="width:200px;height:auto;"></div>
+            <div class="grid-item" style="background:pink;">  <img class="on" src="one.jpg" style="width:auto;height:250px;"></div>
+            <div class="grid-item" style="background:purple;"><img class="on" src="three.jpg" style="width:200px;height:auto;"></div>
+          </div>
+          <label for="Birthdate">Birthdate:</label>
+          <input type="number" name="day" width="52" placeholder="day" min=1 max=31 required>
+            <select class="holes" name="Birthdate">                                  <!--select tag is used when you have to choose from many options-->
+              <option value="0" selected disabled>Month</option>                <!--option tag provides options for the select tag-->
+              <option value="jan">January</option>
+              <option value="feb">February</option>
+              <option value="mar">March</option>
+              <option value="apr">April</option>
+              <option value="may">May</optiona
+              <option value="jun">June</option>
+              <option value="july">July</option>
+              <option value="aug">August</option>
+              <option value="sep">September</option>
+              <option value="oct">October</option>
+              <option value="nov">November</option>
+              <option value="dec">December</option>
+            </select>
+            <input type="number" name="year" value=""min="1987" max="2002" required>
+        </div>
+        <br>
+        <h2>Contact Information:</h2>
+        <div class="Contact-Information">
+          <label for="current-address">Enter your current address:</label>
+          <br>
+          <br>
+          <input type="text" name="current-address" placeholder="Address line 1(House number,Flat number)" required>
+          <input id="space" type="text" name="current-address" placeholder="Address line 2(lane number,)" >
+          <br>
+          <input type="text" name="current-address" placeholder="Area" required>
+          <input id="space" type="text" name="current-address" placeholder="City" required>
+          <br>
+          <input type="text" name="current-address" placeholder="State" required>
+          <input id="space" type="text" name="current-address" placeholder="Country" value="India" required>
+          <br>
+          <label for="permanent-address">Enter your permanent(if same as current address leave this field empty)</label>
+          <br>
+          <br>
+            <input type="text" name="permanent-address" placeholder="Address line 1(House number,Flat number)" required>
+            <input id="space" type="text" name="permanent-address" placeholder="Address line 2(lane number,)">
+            <br>
+            <input type="text" name="permanent-address" placeholder="Area" required>
+            <input id="space" type="text" name="permanent-address" placeholder="City" required>
+            <br>
+            <input type="text" name="permanent-address" placeholder="State" required>
+            <input id="space" type="text" name="permanent-address" placeholder="Country" value="India" required>
+            <br>
+          <label for="telephone-number">Enter telephone number(if any):</label>
+          <input style="margin:0px 0px 20px 20px" type="tel" name="telephone-number" placeholder="Telephone-Number">
+          <br>
+          <label for="Phone-number">Enter your Phone number:</label>
+          <input style="margin:0px 0px 20px 20px" type="text" name="Phone-number" value="+91" placeholder="Phone number" required>
+        </div>
+        <div class="Academics">
+          <h2>Academic Information:</h2>
+          <label  for="SSC">Enter SSC marks(in Percentage):</label>
+          <input id="marks" type="number" name="SSC" size="10" min="35" max="100" width="60px" height="60px" required>
+          <br>
+          <br>
+          <label for="HSC">Enter HSC marks(in Percentage):</label>
+          <input id="marks" type="number" name="HSC" size="10" min="35" max="100" width="60px" height="60px" required>
+          <br>
+          <br>
+          <label for="marks">Enter Engineering Marks(According to Year):</label>
+          <br>
+          <br>
+          <table>
+            <thead>
+              <tr>
+                <th>First Year</th>
+                <th>Second Year</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input id="td" type="number" name="marks" placeholder="First year SGPA" min="0.0" max="10.0" required></td>
+                <td><input id="td" type="number" name="marks" placeholder="Second year SGPA" min="0.0" max="10.0" required></td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <br>
+          <table>
+            <thead>
+              <th>Third Year</th>
+              <th>Final Year</th>
+            </thead>
+            <tbody>
+              <td><input id="td" type="number" name="marks" placeholder="Third year SGPA" min="0.0" max="10.0" required></td>
+              <td><input id="td" type="number" name="marks" placeholder="Final year SGPA" min="0.0" max="10.0" required></td>
+
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <div class="w3">
+            <input type="checkbox" name="agreement" value="">
+            <label for="agreement">I agree to all <a href="page2.html">terms and conditions</a> </label>
+            <br>
+            <br>
+            <button type="submit" name="submit" class="Submit">Submit</button>
+        </div>
+        <div class="">
+          <p id="shanks">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="https://www.google.com"></a>
+          <label for="Suggestion">Please write down any Suggestions/Comments:</label>
+          <br>
+          <textarea id="Suggestion" name="Suggestion" rows="8" cols="80" placeholder="Write your Suggestions/Comments"></textarea>
+        </div>
+        <div class="">
+          <p>Please check following things:</p>
+          <ul>
+            <li>You have written name according to following:
+              <ol>
+                <li>All characters except first character of your name is capital.</li>
+                <li>The last name is wrtten in capital letters.</li>
+              </ol>
+            </li>
+            <li>Enter marks in SGPA not in Percemtage.</li>
+            <li>Remember following things:
+              <ol>
+                <li>Your Information can be used for educational purpose only.</li>
+                <li>For any complaint about anything call to GOD we can not solve everything!!!:)</li>
+                <li>We know this site is not great but don't complain just do what you must.</li>
+                <li id="main_warning">Our executives are always busy...so keep calm and wait for 1-2 hours to answer the calls...</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

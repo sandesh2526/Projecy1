@@ -1,0 +1,178 @@
+/*for class ".class", for id "#id",for all html elements "element"(for e.g. p{})*/
+.w3
+{
+  font-style: italic;
+}
+input
+{
+  background: inherit;
+  border-style: dashed;
+  border-radius: 5px;
+  border-width: thin;
+  padding: 5px;
+}
+body
+{
+
+}
+.image1
+{
+    border-radius: 30px;
+   padding: 20px;
+   display: inline;
+}
+.Gender
+{
+  padding: 10px;
+
+}
+*
+{
+  background-color: rgb(66, 69, 90);
+  color: orange;
+}
+.container
+{
+  margin: 10px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: purple;
+}
+.container-item
+{
+  color:grey;
+  margin:10px;
+  width: 100px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+}
+.image
+{
+  margin: 10px;
+  height: 300px;
+  width: auto;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-color: tomato;
+}
+img
+{
+  width: auto;
+  height:15em;
+  border-radius: 35px;
+  border: 10px solid yellow;
+  border-color: yellow;
+}
+.grid-container
+{
+  margin: 10px;
+  height: 300px;
+  grid-auto-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  display: grid;
+}
+.grid-item
+{
+  color:skyblue;
+  font-size: 25px;
+  width: 70px;
+  line-height: 40px;
+  margin: 10px;
+  text-align: center;
+}
+a
+{
+  text-decoration: none;
+}
+a:hover
+{
+  color: tomato;
+  text-decoration: overline;
+}
+#male
+{
+    padding-right: 5px;
+}
+#female
+{
+  padding-right: 5px;
+}
+.Submit
+{
+  color: orange;
+  font-size: 17px;
+  border-radius: 5px;
+  text-transform: full-width;
+  background: linear-gradient(to right,grey,purple);
+}
+#td
+{
+  text-align: left;
+  font-stretch: expanded;
+}
+#main_warning
+{
+  color: yellow;
+}
+#space
+{
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+#marks
+{
+  margin-left: 30px;
+}
+#Suggestion
+{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+#shanks
+{
+  text-align: justify;
+}
+input[type=text]:focus
+{
+  width:250px;
+}
+/*Advanced Selectors */
+label+input
+{                                                                    /*This selector selects the input which is immediately followed by label*/
+  color:  green;
+}
+p ~ input
+{                                                                      /*This selector selects the input if both elements have same parent*/
+  color: red;
+}
+div > h1
+{                                                                       /*This selects the element h1 if "h1" is child of "div".It only selects direct child*/
+  text-align: center;
+  color: pink;
+}
+tr>th
+{
+  padding-right: 50px;
+}
+tr>td
+{
+  padding-right: 50px;
+}
+ul>li
+{
+  color:green;                                                                  /*It will not work as the following selector have more impact*/
+}                                                                               /*Change there position to make this work with following selector*/
+ul li
+{
+  color: tomato;                                                                /*This selects the "li" elements which are descendents of "ul"*/
+}
+.Contact-Information
+{
+  margin-left: 20px;
+}

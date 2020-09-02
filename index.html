@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Just a basic review"> <!-- This gives info to browser   -->
+    <meta name="author" content="SandyDIdiot">    <!-- It gives info about author--->
+    <meta name="keywords" content="HTML site,HTML project"> <!-- Keywords were used to relivent the searched attribute in past...-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- It defines the site's size on different devices -->
+    <title>Google</title>     <!--Defines title of website-->
+    <link rel="icon" href="logo.png" type="image/icon type">    <!--It gives icon to the website-->
+    <style media="screen">
+      *{
+        background-image: url("logo.png");
+        background-size: contain ;
+        background-attachment: fixed ;
+      }
+      p{
+        background-color: skyblue;
+        color: black;
+        font-style: oblique;
+      }
+      a{
+        background: orange;
+        color: green;
+      }
+      div{
+        background-image: url("logo.png");
+        background-size: contain ;
+        background-attachment: ;
+
+        }
+        span{
+        }
+    </style>
+  </head>
+  <body style="background-color:#42455a;">
+    <p><i>This is just the </i><b>start</b></p>
+    <hr width="70%">  <!-- This tag adds a line between paragraphs-->
+    <div class="grid">
+        <div class="ex">
+
+        </div>
+    </div>
+
+
+    <p>The water is H<sub>2</sub>O</p>      <!-- This is subscript tag-->
+    <p>Hundred can be written as 10<sup>2</sup></p> <!-- This is superscript tag-->
+    <p style="color: blue;background-color: red;">THere is nothing out THere</p>
+    <a href="page2.html">Page 2</a>
+
+
+    <hr>
+    <a href="dir1/form.html">form</a>    <br>
+    <a href="logo.png">ImageOfLogo</a>
+    <hr>
+    <img width="100" src="logo.png" alt="A Colt Logo" />  <!-- if you specify only one para like width or height thhe other will be adjusted by browser -->
+    <hr>
+
+
+    <video src="test.MOV" controls poster="logo.png" width="600">AlohoMora</video>
+    <hr>
+
+
+    <ol type="i">
+        <li>Android</li>
+        <li>iOS</li>
+    </ol>
+    <hr>
+
+
+
+    <dl>
+      <dt>Apples</dt>
+      <dd>They contain iron(It may break your teeth)</dd>
+    </dl>
+    <hr>
+
+
+    <table>
+      <thead>
+      <caption>Good Table</caption>
+      <tr>
+        <th>1</th>
+        <th>2</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">11</td> <!--colspan defines "how many columns the element will occupy!"-->
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+
+
+    <!--There are two types of html tags inline and block -->
+    <!--Inline tags consumes only the space that they require for example anchor tag,span tag -->
+    <!--Block tags consumes the space as specified for example paragraph tag,div tag  -->
+    <span>
+
+      <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href="https://www.google.com">
+        First Link
+    </a>
+  </span>
+
+    <span>
+      <a href="https://www.google.com">
+          First Link
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
+    <hr>
+
+
+    <div class="">
+      div 1
+      <a href="https://www.google.com">
+          First Link
+      </a>
+    </div>
+    <a href="https://www.google.com">
+        First Link
+    </a>
+    <div class="">
+      div 2
+    </div>
+    <hr>
+
+
+
+    <form class="" action="" method="post">
+      <label for="First-Name">First name</label>
+      <input type="tel" name="First-Name" placeholder="Your Name" value="Gallery">
+      <label for="btn">Choose one of following</label>
+      <input type="radio" name="btn" value="">
+      <input type="radio" name="btn" value="">
+      <!--If the radio buttons have same name, only one can be selected-->
+      <!--input tag creates the input field which can be used to take input by using 'javascript' -->
+      <!--"type" can be Password,text,email,file,checkbox,submit etc. -->
+      <textarea name="Textarea1" rows="8" cols="80"></textarea>
+      <!--textarea creates a area which you can increase or decrease as you wish -->
+    </form>   <!--"form" is used as container for all the input tags-->
+  </body>
+</html>
